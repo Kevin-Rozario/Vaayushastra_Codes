@@ -2,8 +2,6 @@ import cv2
 import numpy as np
 resp = int(input("Menu\n1-Red\n2-Green\n3-Yellow\n4-Blue\n5-Brown\n6-Orange\n7-Violet\nEnter your choice:" ))
 cap = cv2.VideoCapture(0)
-# cap.set(cv2.CAP_PROP_FRAME_WIDTH, 150)
-# cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 100)
 if resp==1:
 	L_limit=np.array([136,87,111]) # setting the red lower limit
 	U_limit=np.array([180,255,255]) # setting the red upper limit
